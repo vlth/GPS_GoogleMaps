@@ -7,22 +7,22 @@
     <permission
         android:name="de.cm3p.ha.gps_googlemaps.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
- 
+
     <uses-permission android:name="de.cm3p.ha.gps_googlemaps.permission.MAPS_RECEIVE" />
- 
+
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="18" />
-    
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
- 
+
     <!-- Required to show current location -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
- 
+
     <!-- Required OpenGL ES 2.0. for Maps V2 -->
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -43,10 +43,15 @@
             </intent-filter>
         </activity>
 
+        <!-- dieses meta data tag muss sein -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <!-- Goolge Maps API Key -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyABNxZFvcTqnRxyGDup4RZeTYIWE5_O1hc" />
+            android:value="AIzaSyBFIviWnor4DbOgIsxAkrObHtulMFMtlV4" />
     </application>
 
 </manifest>
